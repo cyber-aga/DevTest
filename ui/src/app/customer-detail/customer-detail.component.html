@@ -1,0 +1,5 @@
+<ng-container *ngIf="(customer$ | async) as customer">
+  <p>CustomerId: {{customer.id}}</p>
+  <p>Name: {{customer.name}}</p>
+  <p>Type: {{customer.type}}</p>
+</ng-container>
