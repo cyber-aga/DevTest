@@ -14,5 +14,20 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Properties\CustomerResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>CustomerResources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\CustomerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CustomerResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
 
 </Project>
